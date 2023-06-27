@@ -69,6 +69,18 @@ body {
   }
 }
 
+@keyframes soaking {
+  to {
+    transform: translateY(-250px) scale(0);
+  }
+}
+
+@keyframes shrinkHorizontal {
+  to {
+    transform: scaleX(0);
+  }
+}
+
 #planet_2 {
   /* animation-name: rotation;
   animation-duration: 4s;
@@ -121,16 +133,29 @@ body {
 }
 
 #UFO-beam {
-  animation: expandHorizontal 3.5s infinite;
+  animation: expandHorizontal 3.5s;
   transform-box: fill-box;
   transform-origin: center;
 }
 
 #number-0 {
-  animation: appearFromBottom 3.5s infinite;
+  animation: appearFromBottom 3.5s;
 }
 
 #alien_hand-L,
 #alien_hand-R {
   animation: shakingUpAndDown 1s infinite;
+}
+
+#number-0-soaking {
+  animation: soaking 2s;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#UFO-beam-disappearing {
+  animation: shrinkHorizontal 2s;
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 80%;
 }
