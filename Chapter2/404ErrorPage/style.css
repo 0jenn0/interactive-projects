@@ -145,6 +145,7 @@ body {
 #alien_hand-L,
 #alien_hand-R {
   animation: shakingUpAndDown 1s infinite;
+  animation-timing-function: cubic-bezier(0.28, 0.13, 0.43, 0.98);
 }
 
 #number-0-soaking {
